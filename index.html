@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>Planets</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="main_canvas"> </canvas>
+    <div id="controls">
+      Number of planets<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="1000"
+          id="number_of_planets"
+          data-partner="number_of_planets_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="1000"
+          id="number_of_planets_t"
+          data-partner="number_of_planets"
+        />
+      </div>
+      Min planet size<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="100"
+          id="planet_min_size"
+          data-partner="planet_min_size_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="100"
+          id="planet_min_size_t"
+          data-partner="planet_min_size"
+        />
+      </div>
+      Max planet size<br />
+      <div class="control">
+        <input
+          type="range"
+          step="1"
+          min="1"
+          max="100"
+          id="planet_max_size"
+          data-partner="planet_max_size_t"
+        />
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="100"
+          id="planet_max_size_t"
+          data-partner="planet_max_size"
+        />
+      </div>
+      Starting planet speed<br />
+      <div class="control">
+        <input
+          type="range"
+          step="0.01"
+          min="0"
+          max="20"
+          id="planet_start_speed"
+          data-partner="planet_start_speed_t"
+        />
+        <input
+          type="number"
+          step="0.01"
+          min="0"
+          max="20"
+          id="planet_start_speed_t"
+          data-partner="planet_start_speed"
+        />
+      </div>
+      Gravitational constant<br />
+      <div class="control">
+        <input
+          type="range"
+          step="0.01"
+          min="0.01"
+          max="20"
+          id="gravitation_constant"
+          data-partner="gravitation_constant_t"
+        />
+        <input
+          type="number"
+          step="0.01"
+          min="0.01"
+          max="20"
+          id="gravitation_constant_t"
+          data-partner="gravitation_constant"
+        />
+      </div>
+      Combine planets<br />
+      <div class="control">
+        <input type="checkbox" id="combine_planets" />
+      </div>
+      Wrap gravitational attraction<br />
+      <div class="control">
+        <input type="checkbox" id="wrap_attraction" />
+      </div>
+      Pretend planets are constant distance from each other<br />
+      <div class="control">
+        <input type="checkbox" id="constant_distance" />
+      </div>
+      <br />
+      <button value="Reset" onclick="Reset()">Reset</button>
+    </div>
+  </body>
+
+  <script src="scripts.js"></script>
+</html>

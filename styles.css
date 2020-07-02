@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12pt;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  border: solid 2px black;
+}
+#controls {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc(100% - 800px - 10px);
+  min-width: 420px;
+  padding: 20px;
+  vertical-align: top;
+}
+.control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+input[type="range"] {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: 30px;
+}
+input[type="number"] {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  width: calc(20% - 10px - 4px);
+  height: 30px;
+  vertical-align: top;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 10px;
+}
